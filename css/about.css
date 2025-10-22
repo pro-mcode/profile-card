@@ -81,7 +81,7 @@ h3 {
   text-align: center;
 }
 .about-container .section {
-  padding: 0 var(--spacing-2x);
+  padding: 0;
 }
 .about-container .about-img {
   position: relative;
