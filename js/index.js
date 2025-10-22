@@ -1,8 +1,8 @@
-const timeEl = document.querySelector('[data-testid="test-user-time"]');
+const timeElement = document.querySelector('[data-testid="test-user-time"]');
 const themeToggle = document.getElementById("theme-toggle");
 
 function updateTime() {
-  timeEl.textContent = Date.now();
+  timeElement.textContent = Date.now();
 }
 
 updateTime(); // show current time
@@ -24,4 +24,21 @@ themeToggle.addEventListener("click", () => {
     : '<i class="fa-solid fa-moon"></i>';
 
   localStorage.setItem("theme", isDark ? "dark" : "light");
+});
+
+const navToggle = document.getElementById("nav-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+navToggle.addEventListener("click", () => {
+  const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
+  navToggle.setAttribute("aria-expanded", !isExpanded);
+  navMenu.classList.toggle("show");
+});
+
+// Keyboard support (Enter / Space)
+navToggle.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    navToggle.click();
+  }
 });

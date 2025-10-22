@@ -6,100 +6,151 @@
     <title>Adedamola Maxwell | Frontend Engineer & Blockchain Enthusiast</title>
 
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/nav.css" />
     <script
       src="https://kit.fontawesome.com/59a5ac1eda.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <article class="global-container" data-testid="test-profile-card">
-      <button
-        id="theme-toggle"
-        aria-label="Toggle theme"
-        data-testid="test-theme-toggle"
+    <header class="navbar" role="banner">
+      <nav
+        class="nav-container"
+        aria-label="Main navigation"
+        data-testid="test-navbar"
       >
-        <i class="fa-solid fa-moon"></i>
-      </button>
-      <div class="profile-img-name">
-        <header>
-          <h2 data-testid="test-user-name">Adedamola Maxwell</h2>
-          <p data-testid="test-user-bio">
-            Frontend engineer and blockchain enthusiast passionate about
-            building fast, responsive, and accessible web experiences. Skilled
-            in optimizing web performance, crafting clean design systems, and
-            bringing innovative digital ideas to life
-          </p>
-        </header>
-        <div class="profile-img-socials">
-          <figure>
-            <img
-              src="/assets/img/profile-img.jpeg"
-              alt="Profile photo of frontend engineer Adedamola Maxwell"
-              data-testid="test-user-avatar"
-            />
-          </figure>
-          <nav
-            data-testid="test-user-social-links"
-            aria-label="User social links"
-          >
+        <!-- Menu toggle for small screens -->
+        <button
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Toggle navigation"
+          data-testid="test-navbar-toggle"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="logo-nav-links">
+          <!-- Logo -->
+          <a href="/" class="nav-logo" data-testid="test-navbar-logo">
+            Adedamola Maxwell
+          </a>
+
+          <!-- Navigation links -->
+          <ul id="nav-menu" class="nav-links" data-testid="test-navbar-links">
+            <li>
+              <a
+                href="/index.html"
+                class="active"
+                data-testid="test-navbar-profile"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a href="/about.html" data-testid="test-navbar-about">About</a>
+            </li>
+            <li>
+              <a href="/contact.html" data-testid="test-navbar-contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Theme toggle icon -->
+        <button
+          id="theme-toggle"
+          aria-label="Toggle theme"
+          data-testid="test-theme-toggle"
+        >
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </header>
+    <article>
+      <div class="global-container" data-testid="test-profile-card">
+        <div class="profile-img-name">
+          <header>
+            <h2 data-testid="test-user-name">Adedamola Maxwell</h2>
+            <p data-testid="test-user-bio">
+              Frontend engineer and blockchain enthusiast passionate about
+              building fast, responsive, and accessible web experiences. Skilled
+              in optimizing web performance, crafting clean design systems, and
+              bringing innovative digital ideas to life
+            </p>
+          </header>
+          <div class="profile-img-socials">
+            <figure>
+              <img
+                src="/assets/img/about-img.jpg"
+                alt="Profile photo of frontend engineer Adedamola Maxwell"
+                data-testid="test-user-avatar"
+              />
+            </figure>
+            <nav
+              data-testid="test-user-social-links"
+              aria-label="User social links"
+            >
+              <ul>
+                <li>
+                  <a
+                    href="https://twitter.com/pro_mcode"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-twitter"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://linkedin.com/in/pro-mcode"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-linkedin"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://discord.com/users/pro_mcode"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-discord"
+                    ><i class="fa-brands fa-discord"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <section class="profile-hobbies-dislikes">
+          <div class="hobbies-wrapper" data-testid="test-user-hobbies">
+            <h3>Hobbies</h3>
             <ul>
-              <li>
-                <a
-                  href="https://twitter.com/pro_mcode"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="test-user-social-twitter"
-                  ><i class="fa-brands fa-x-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://linkedin.com/in/pro-mcode"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="test-user-social-linkedin"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://discord.com/users/pro_mcode"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="test-user-social-discord"
-                  ><i class="fa-brands fa-discord"></i
-                ></a>
-              </li>
+              <li>Exploring new technologies</li>
+              <li>Trading and analyzing crypto markets</li>
+              <li>Building creative web projects</li>
+              <li>Learning about design</li>
+              <li>Designing and refining user interfaces</li>
+              <li>Learning about smart contracts and DeFi protocols</li>
             </ul>
-          </nav>
+          </div>
+          <div class="dislikes-wrapper" data-testid="test-user-dislikes">
+            <h3>Dislikes</h3>
+            <ul>
+              <li>Inefficient workflows</li>
+              <li>Disorganization</li>
+              <li>Poor user experience</li>
+              <li>Slow or unoptimized websites</li>
+            </ul>
+          </div>
+        </section>
+        <div class="time-wrapper">
+          <p>Current time (ms): <span data-testid="test-user-time"></span></p>
         </div>
-      </div>
-      <section class="profile-hobbies-dislikes">
-        <div class="hobbies-wrapper" data-testid="test-user-hobbies">
-          <h3>Hobbies</h3>
-          <ul>
-            <li>Exploring new technologies</li>
-            <li>Trading and analyzing crypto markets</li>
-            <li>Building creative web projects</li>
-            <li>Learning about design</li>
-            <li>Designing and refining user interfaces</li>
-            <li>Learning about smart contracts and DeFi protocols</li>
-          </ul>
-        </div>
-        <div class="dislikes-wrapper" data-testid="test-user-dislikes">
-          <h3>Dislikes</h3>
-          <ul>
-            <li>Inefficient workflows</li>
-            <li>Disorganization</li>
-            <li>Poor user experience</li>
-            <li>Slow or unoptimized websites</li>
-          </ul>
-        </div>
-      </section>
-      <div class="time-wrapper">
-        <p>Current time (ms): <span data-testid="test-user-time"></span></p>
       </div>
     </article>
-    <script src="/js/index.js"></script>
+    <script src="/js/index.js" type="module"></script>
   </body>
 </html>

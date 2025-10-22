@@ -88,13 +88,25 @@ Running Lighthouse in Chrome DevTools to check performance and accessibility.
 HNG-PROFILE-CARD/
 │
 ├── index.html
+├── about.html
+├── contact.html
+│
 ├── css/
-│ └── index.css
+│ ├── index.css
+│ ├── nav.css
+│ ├── about.css
+│ └── contact.css
+│
 ├── js/
-│ └── index.js
+│ ├── index.js
+│ ├── about.js
+│ └── contact.js
+│
 ├── assets/
 │ └── img/
-│ └── profile-img.jpeg
+│ ├── profile-img.jpeg
+│ └── about-img.jpg
+│
 └── README.md
 
 ## 🧑‍💻 Author
@@ -104,6 +116,19 @@ Frontend Engineer & Blockchain Enthusiast
 [Twitter](https://twitter.com/pro_mcode) |
 [LinkedIn](https://linkedin.com/in/pro-mcode) |
 [Discord](https://discord.com/users/pro_mcode)
+
+## 🧭 About
+
+This project represents my focus on building clean, accessible, and performant user interfaces.
+It combines simplicity with interactivity — from theme toggling to responsive design — showing my ability to create engaging user experiences with pure frontend technologies.
+
+## 📞 Contact
+
+If you'd like to collaborate, share feedback, or discuss opportunities, feel free to reach out:
+
+📧 Email: promcode01@gmail.com
+
+📱 Phone: +234 9034493570
 
 ## 📜 License
 

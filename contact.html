@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — Adedamola Maxwell</title>
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/59a5ac1eda.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="page" aria-labelledby="contact-heading">
+      <header class="navbar" role="banner">
+        <nav
+          class="nav-container"
+          aria-label="Main navigation"
+          data-testid="test-navbar"
+        >
+          <!-- Menu toggle for small screens -->
+          <button
+            id="nav-toggle"
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            aria-label="Toggle navigation"
+            data-testid="test-navbar-toggle"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div class="logo-nav-links">
+            <!-- Logo -->
+            <a href="/" class="nav-logo" data-testid="test-navbar-logo">
+              Adedamola Maxwell
+            </a>
+
+            <!-- Navigation links -->
+            <ul id="nav-menu" class="nav-links" data-testid="test-navbar-links">
+              <li>
+                <a href="/index.html" data-testid="test-navbar-profile"
+                  >Profile</a
+                >
+              </li>
+              <li>
+                <a href="/about.html" data-testid="test-navbar-about">About</a>
+              </li>
+              <li>
+                <a
+                  href="/contact.html"
+                  class="active"
+                  data-testid="test-navbar-contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Theme toggle icon -->
+          <button
+            id="theme-toggle"
+            aria-label="Toggle theme"
+            data-testid="test-theme-toggle"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </nav>
+      </header>
+      <article aria-describedby="contact-intro">
+        <div class="contact-hero">
+          <h1 id="contact-heading">Contact</h1>
+          <p id="contact-intro">
+            I’d love to hear from you! Whether you have a question, feedback, or
+            just want to say hello, feel free to reach out using the form below.
+          </p>
+        </div>
+        <div class="contact-container">
+          <form id="contact-form" novalidate data-testid="test-contact-form">
+            <h3>Get In Touch</h3>
+            <hr />
+            <!-- Full name -->
+            <div class="form-row">
+              <label for="contact-name">Full name</label>
+              <input
+                id="contact-name"
+                name="name"
+                type="text"
+                aria-describedby="test-contact-error-name"
+                required
+                data-testid="test-contact-name"
+                autocomplete="name"
+                placeholder="Enter your full name"
+              />
+              <span
+                id="test-contact-error-name"
+                class="error"
+                role="alert"
+                aria-live="assertive"
+                data-testid="test-contact-error-name"
+              ></span>
+            </div>
+
+            <!-- Email -->
+            <div class="form-row">
+              <label for="contact-email">Email</label>
+              <input
+                id="contact-email"
+                name="email"
+                type="email"
+                aria-describedby="test-contact-error-email"
+                required
+                data-testid="test-contact-email"
+                autocomplete="email"
+                inputmode="email"
+                placeholder="Enter your valid email"
+              />
+              <span
+                id="test-contact-error-email"
+                class="error"
+                role="alert"
+                aria-live="assertive"
+                data-testid="test-contact-error-email"
+              ></span>
+            </div>
+
+            <!-- Subject -->
+            <div class="form-row">
+              <label for="contact-subject">Subject</label>
+              <input
+                id="contact-subject"
+                name="subject"
+                type="text"
+                aria-describedby="test-contact-error-subject"
+                required
+                data-testid="test-contact-subject"
+                autocomplete="off"
+                placeholder="Add a subject to your message"
+              />
+              <span
+                id="test-contact-error-subject"
+                class="error"
+                role="alert"
+                aria-live="assertive"
+                data-testid="test-contact-error-subject"
+              ></span>
+            </div>
+
+            <!-- Message -->
+            <div class="form-row">
+              <label for="contact-message">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="6"
+                aria-describedby="test-contact-error-message"
+                required
+                data-testid="test-contact-message"
+                minlength="10"
+                placeholder="Type your message here"
+              ></textarea>
+              <span
+                id="test-contact-error-message"
+                class="error"
+                role="alert"
+                aria-live="assertive"
+                data-testid="test-contact-error-message"
+              ></span>
+            </div>
+
+            <div class="form-actions">
+              <button
+                type="submit"
+                data-testid="test-contact-submit"
+                class="btn"
+              >
+                Send message
+              </button>
+            </div>
+
+            <div
+              id="contact-success"
+              class="success"
+              role="status"
+              aria-live="assertive"
+              hidden
+              data-testid="test-contact-success"
+            >
+              Thank you — your message was sent successfully.
+            </div>
+          </form>
+
+          <div class="contact-panel">
+            <h3>How to reach me</h3>
+            <hr />
+            <div class="contact-link">
+              <div class="link">
+                <a
+                  href="mailto:christophermaxwell20005@gmail.com"
+                  data-testid="test-contact-link-email"
+                  ><i class="fa-solid fa-envelope"></i> promcode01@gmail.com</a
+                >
+              </div>
+              <div class="link">
+                <a
+                  href="tel:+234903449570"
+                  data-testid="test-contact-link-phone"
+                  ><i class="fa-sharp fa-solid fa-phone"></i> +234 9034493570</a
+                >
+              </div>
+              <div class="link">
+                <a
+                  href="https://maxwell-profile-card.netlify.app"
+                  data-testid="test-contact-link-website"
+                  ><i class="fa-sharp fa-solid fa-earth-americas"></i>
+                  promcode.dev</a
+                >
+              </div>
+            </div>
+
+            <h3 class="social-title">Follow me on</h3>
+            <hr />
+            <ul class="social-link" data-testid="test-contact-social-list">
+              <li>
+                <a
+                  href="https://twitter.com/pro_mcode"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/in/pro-mcode"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://discord.com/users/pro_mcode"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-discord"
+                  ><i class="fa-brands fa-discord"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <footer class="page-footer">
+          <p>© 2025 Adedamola Maxwell. All rights reserved.</p>
+        </footer>
+      </article>
+    </main>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>

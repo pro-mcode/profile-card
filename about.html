@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About — Adedamola Maxwell</title>
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/59a5ac1eda.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main
+      class="page"
+      id="about-main"
+      data-testid="test-about-page"
+      aria-labelledby="about-heading"
+    >
+      <header class="navbar" role="banner">
+        <nav
+          class="nav-container"
+          aria-label="Main navigation"
+          data-testid="test-navbar"
+        >
+          <!-- Menu toggle for small screens -->
+          <button
+            id="nav-toggle"
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            aria-label="Toggle navigation"
+            data-testid="test-navbar-toggle"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div class="logo-nav-links">
+            <!-- Logo -->
+            <a href="/" class="nav-logo" data-testid="test-navbar-logo">
+              Adedamola Maxwell
+            </a>
+
+            <!-- Navigation links -->
+            <ul id="nav-menu" class="nav-links" data-testid="test-navbar-links">
+              <li>
+                <a href="/index.html" data-testid="test-navbar-profile"
+                  >Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about.html"
+                  class="active"
+                  data-testid="test-navbar-about"
+                  >About</a
+                >
+              </li>
+
+              <li>
+                <a href="/contact.html" data-testid="test-navbar-contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Theme toggle icon -->
+          <button
+            id="theme-toggle"
+            aria-label="Toggle theme"
+            data-testid="test-theme-toggle"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </nav>
+      </header>
+      <article aria-describedby="about-intro">
+        <div class="about-hero">
+          <h1 id="about-heading">About Me</h1>
+          <p class="short-reflec">
+            A short reflection on my skills, goals, and areas I want to improve
+            while in this program.
+          </p>
+        </div>
+        <div class="about-container">
+          <section class="about-img one">
+            <img
+              src="/assets/img/about-img.jpg"
+              href="About photo of frontend engineer Adedamola Maxwell"
+              srcset=""
+            />
+            <div class="title-wrapper">
+              <span class="title">Frontend Engineer</span>
+            </div>
+          </section>
+          <section
+            class="section two"
+            aria-labelledby="bio-heading"
+            data-testid="test-about-bio"
+          >
+            <h2 id="bio-heading">Who i am</h2>
+            <!-- <p>
+              Frontend engineer and blockchain enthusiast focused on building
+              fast, accessible web experiences. I enjoy design systems,
+              performance optimization, and experimenting with Web3 tooling.
+            </p> -->
+            <!-- <p>
+              Frontend engineer and blockchain enthusiast passionate about crafting fast, accessible, and visually engaging web experiences. I specialize in building design systems that scale, optimizing performance for seamless user interaction, and exploring the intersection of Web2 and Web3 technologies. I enjoy experimenting with decentralized applications, smart contract integrations, and emerging Web3 tooling that push the boundaries of how people experience the web.
+            </p> -->
+            <p>
+              Frontend engineer and blockchain enthusiast focused on building
+              fast, accessible, and visually engaging web experiences. I’m
+              passionate about design systems, performance optimization, and
+              creating scalable user interfaces. I enjoy experimenting with Web3
+              tooling, exploring decentralized technologies, and blending
+              creativity with engineering to deliver seamless digital
+              experiences.
+            </p>
+          </section>
+          <section
+            class="section three"
+            aria-labelledby="goals-heading"
+            data-testid="test-about-goals"
+          >
+            <h2 id="goals-heading">Goals in this program</h2>
+            <ul>
+              <li>
+                <i class="fa-solid fa-arrow-right"></i>Sharpen frontend
+                architecture and component design.
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right"></i>
+                Build at least one production-ready dApp using smart contracts.
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right"></i>Improve testing and CI/CD
+                skills for frontend projects.
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right"></i>Gain hands-on experience
+                through real-world projects.
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right"></i>Enhance problem-solving
+                and collaboration skills.
+              </li>
+            </ul>
+          </section>
+          <section
+            class="section four"
+            aria-labelledby="confidence-heading"
+            data-testid="test-about-confidence"
+          >
+            <h2 id="confidence-heading">Areas of low confidence</h2>
+            <p>
+              I'm less confident in advanced smart contract auditing patterns
+              and backend security for blockchain apps — I want to improve in
+              these areas.
+            </p>
+          </section>
+          <section
+            class="section five"
+            aria-labelledby="future-heading"
+            data-testid="test-about-future-note"
+          >
+            <h2 id="future-heading">Note to future self</h2>
+            <p>
+              Remember to keep learning incrementally, focus on fundamentals,
+              and document progress consistently.
+            </p>
+          </section>
+          <section
+            class="section six"
+            aria-labelledby="extra-heading"
+            data-testid="test-about-extra"
+          >
+            <h2 id="extra-heading">Extra thoughts</h2>
+            <p>
+              I plan to contribute to open-source blockchain UI components and
+              write about lessons learned to help others onboard into Web3.
+            </p>
+          </section>
+        </div>
+        <footer class="page-footer">
+          <p>© 2025 Adedamola Maxwell. All rights reserved.</p>
+        </footer>
+      </article>
+    </main>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>
